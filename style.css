@@ -1,0 +1,216 @@
+html{
+	font-family: "Open Sans","Arial", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	background-color: #222;
+	color: #999;
+	height: 100%;
+}
+
+body{
+	padding: 30px;
+	height: 100%;
+}
+
+canvas{
+	border: 1px solid #444;
+}
+
+a{
+	text-decoration: none;
+	color: #666;
+	border: 1px solid #444;
+	padding: 1px 4px;
+}
+
+.clear{
+	clear: both;
+}
+
+.controler{
+	min-height: 100%;
+	width: 100%;
+	min-width: 240px;
+	text-align: center;
+}
+
+.controler > div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.colorPickerW{
+	width: 200px;
+	height: 200px;
+	padding: 6px;
+	border-radius: 100%;
+	background-image: url("./rainbow3.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.colorPicker{
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+
+.colorPicker .cursor{
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	background: red;
+	position: absolute;
+	cursor: pointer;
+}
+
+.colorPicker .color{
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+	background: red;
+}
+
+.mod_{
+	line-height: 40px;
+	width: 200px;
+	padding: 0 20px;
+	padding-top: 10px;
+}
+
+.mod{
+	background-color: transparent;
+	padding: 0 10px;
+	border-radius: 100%;
+	border: 1px solid #444;
+	-webkit-appearance: none;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.mod.selected{
+	background-color: #444;
+}
+
+input.time{
+	width: 50px;
+	background-color: transparent;
+	color: #777;
+	border: 1px solid #444;
+	height: 20px;
+	text-align: center;
+}
+
+.sliderRange{
+	width: 200px;
+	height: 4px;
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	margin-left: 6px;
+}
+
+.move{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-top: -14px;
+	box-shadow: 1px 1px 3px 3px rgba(0,0,0,.2);
+	background-color: red;
+	left: 50%;
+	cursor: pointer;
+}
+
+#sat{
+	background: red;
+
+	background: linear-gradient(to right,white,red);
+}
+
+#bright{
+	background: white;
+
+	background: linear-gradient(to right,black,white);
+}
+
+#bright .move{
+	background-color: white;
+}
+
+.onoff{
+	width: 80px;
+	height: 30px;
+	border: 1px solid #444;
+	position: relative;
+	line-height: 30px;
+	cursor: pointer;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.on{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 5px;
+	color: black;
+	background-color: #444;
+	text-align: center;
+}
+
+.off{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 5px;
+	text-align: center;
+	color: white;
+	background-color: transparent;
+}
+
+.onoff.active .on{
+	background-color: transparent;
+	color: white;
+}
+
+.onoff.active .off{
+	background-color: #444;
+	color: black;
+}
+
+.log,.update{
+	height: 40px;
+	text-align: center;
+}
+
+.pallete{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+
+.pallete > div{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	margin: 0px 4px;
+	background-color: black;
+	cursor: pointer;
+}
