@@ -2,4 +2,4 @@
 Web interface for colorpicker. Used to control RGB LED strip
 
 ## Preview
-![Screenshot](preview.png)
+![Preview](https://github.com/Xinatorus/Colorpicker-webapp/raw/master/preview.PNG)
